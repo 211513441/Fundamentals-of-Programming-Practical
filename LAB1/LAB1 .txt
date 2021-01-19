@@ -1,4 +1,4 @@
-Lab No. 1: Programming Basics		
+# Lab No. 1: Programming Basics		
 Objective:
 The objective of this lab is to implement the basics of programming constructs in C language.
 Scope:
