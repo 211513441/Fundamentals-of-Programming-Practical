@@ -1,0 +1,111 @@
+Lab No. 1: Programming Basics		
+Objective:
+The objective of this lab is to implement the basics of programming constructs in C language.
+Scope:
+In this lab, notion of different data types usage, variable declaration and initialization, format specifiers, escape sequences, width & precisions in output and arithmetic operators will be discussed with examples.
+Example 1: 
+This program shows variable declaration, initialization, output controlled with width and precision. 
+#include<stdio.h>
+
+	void main()
+	{
+		int a,b;
+		float c,d;
+
+		a = 15;
+		b = a / 2;
+		printf("%d\n",b);
+		printf("%3d\n",b);
+		printf("%03d\n",b);
+
+		c = 15.3;
+		d = c / 3;
+		printf("%3.2f\n",d);
+	}
+
+Example 2:
+This program demonstrates usage of format specifiers, escape sequences, output managed with width and precision.
+
+#include<stdio.h>
+
+	void main()
+	{
+		printf("The color: %s\n", "blue");
+		printf("First number: %d\n", 12345);
+		printf("Second number: %04d\n", 25);
+		printf("Third number: %i\n", 1234);
+		printf("Float number: %3.2f\n", 3.14159);
+		printf("Hexadecimal: %x\n", 255);
+		printf("Octal: %o\n", 255);
+		printf("Unsigned value: %u\n", 150);
+		printf("Just print the percentage sign %%\n", 10);
+	}
+
+Example 3: 
+This program shows arithmetic operators usage, unary operators and another way for writing arithmetic expressions.
+
+#include<stdio.h>
+
+void main ()
+
+   {
+
+   int i;
+
+   printf ("Assignment Operators\n\n");
+   i = 10;                          		/* Assignment */
+   printf("i = 10 : %d\n",i);
+   i++;                            		  /* i = i + 1 */
+   printf ("i++ : %d\n",i);
+   i += 5;                      		  /* i = i + 5 */
+   printf ("i += 5 : %d\n",i);
+   i--;                           		  /* i = i = 1 */
+   printf ("i-- : %d\n",i);
+   i -= 2;                           		  /* i = i - 2 */
+   printf ("i -= 2 : %d\n",i);
+   i *= 5;                           		  /* i = i * 5 */
+   printf ("i *= 5 :%d\n",i);
+   i /= 2;                           		 /* i = i / 2 */
+   printf ("i /= 2 : %d\n",i);
+   i %= 3;                           		 /* i = i % 3 */
+   printf ("i %%= 3 : %d\n",i);
+	}
+Example 4: 
+
+This program demonstrates postfix and prefix arithmetic operations over variables.
+
+#include <stdio.h>
+ 
+void  main()
+{
+       int    a, b;
+       a  =  b  =  5;
+      
+       printf("postfix mode and prefix mode example\n");
+       printf("initial value, a = b = 5\n");
+       printf("\npostfix mode, a-- = %d  prefix mode, --b = %d", a--, --b);
+       printf("\npostfix mode, a-- = %d  prefix mode, --b = %d", a--, --b);
+       printf("\npostfix mode, a-- = %d  prefix mode, --b = %d", a--, --b);
+       printf("\npostfix mode, a-- = %d  prefix mode, --b = %d", a--, --b);
+       printf("\npostfix mode, a-- = %d  prefix mode, --b = %d", a--, --b);
+   }    
+
+Practice Exercise 1: 
+Declare and initialize two variables e.g. A, B and perform the arithmetic operations e.g.  addition, subtraction, multiplication, division and remainder, format your output upto three places in width and two places in precision.
+
+Practice Exercise 2: 
+Write a simple program to convert temperature from Fahrenheit to Celsius given by formula c = f-32*5/9. Declare two variables C and F (Celsius and Fahrenheit). Initialize variable F with some temperature value and output temperature in Celsius.   
+
+Homework
+
+1.	Write a simple program to calculate factorial of a number. Declare the variable Factorial and initialize it with a value 6. Output the factorial result. 
+
+2.	Write a program to swap (exchange the values of two variables) two numbers. Declare and initialize two variables A and B such that A = 5 and B = 8. Output the swap results as A = 8 and B = 5.
+
+3.	Declare a variable Subject and initialize it with a value 20 (which shows the student’s marks in subject). Find the percentage of student in this subject if total marks are 30.  
+
+4.	Write a simple program to convert a student weight from kilograms to pounds. Declare two variables Kg and Pound. Initialize the variable Kg with a value 70 and output the converted weight in Pounds by using formula Pound = Kg * 2.2
+
+5.	Find the area of a rectangle. Declare and initialize two variables length and width such that length = 20 and width = 30. Output the area of rectangle using formula area = length * width. 
+
+
